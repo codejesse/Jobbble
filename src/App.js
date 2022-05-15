@@ -1,25 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState, useEffect } from "react"
+import Loader from './components/Loader';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import About from './components/About';
+import Description from './components/Description';
+import PreFooter from './components/PreFooter';
+import Footer from './components/Footer';
+import Application from './components/Application';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Wait for n seconds
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 5000);
+  }, []);
+  
+
+  return isLoading ? (
+    // If page is still loading then splash screen
+    <Loader isLoading={isLoading} />
+  ) : (
+    <>
+      <Navbar />
+      <Home />
+      <About />
+      <Description />
+      <PreFooter />
+      <Footer />
+      {/* <Application /> */}
+    </>
   );
-}
-
+};
 export default App;
