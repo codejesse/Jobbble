@@ -69,7 +69,7 @@ function Navbar() {
     return (
         <NavWrapper>
             <LogoWrapper>
-            <Link to={Application}><img src='jobbble.png' alt='logo' /></Link>
+            <Link to={Application}><img src='Jobbble.png' alt='logo' /></Link>
             </LogoWrapper>
             <LinksWrapper>
                 <Fade bottom><List><a href="default.asp">Categories</a></List></Fade>
