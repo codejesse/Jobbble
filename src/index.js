@@ -7,6 +7,7 @@ import {
   Route,
 } from "react-router-dom";
 import Application from './components/Application';
+import JobDetails from './components/JobDetails';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="Application" element={<Application />} />
+      <Route path="Job" element={<JobDetails />} />
     </Routes>
   </BrowserRouter>
 );

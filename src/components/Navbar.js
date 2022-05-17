@@ -78,7 +78,7 @@ function Navbar() {
                 <Fade bottom><List><a href="about.asp">Employers</a></List></Fade>
             </LinksWrapper>
             <NavButtonWrapper>
-            <Link to="/Application"><NavButton>Find a job</NavButton></Link>
+            <Link to="/Application"><NavButton className='blob red'>Find a job</NavButton></Link>
             </NavButtonWrapper>
         </NavWrapper>
     )
