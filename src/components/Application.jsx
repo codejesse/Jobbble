@@ -35,7 +35,7 @@ const Application = () => {
         console.log(searchResult)
     }
 
-    // console.log(searchResult)
+    console.log(searchResult)
 
     const handleOnSubmit = (event) => {
         event.preventDefault();
@@ -43,6 +43,7 @@ const Application = () => {
             setJobs(searchResult)
         } else if (searchResult.length === 0) {
             console.log('Nothing here')
+            setJobs(jobs)
         }
     };
 

@@ -22,6 +22,7 @@ export const HeroImageWrapper = styled.div`
 `;
 
 export const HeaderText = styled.div`
+    text-align: center;
     margin-top: 12rem;
     margin-left: 12rem;
     width: fit-content;
@@ -200,7 +201,7 @@ export const PreFooter = styled.div`
     height: 30%;
     background-color: rgb(255, 248, 239);
     @media (max-width: 768px) {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 `;
 

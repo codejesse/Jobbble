@@ -3,6 +3,7 @@ import preFooter from "../assets/Prefooter.png";
 import HeaderVid from "../assets/Header.mp4";
 import About1 from "../assets/About1.png";
 import About2 from "../assets/About2.png";
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -11,14 +12,16 @@ const Home = () => {
             <HeroWrapper>
                 <HeroImageWrapper>
                     {/* <img src={HeroImage} alt="hero-image" /> */}
-                    <video controls loop autoPlay width="100%" style={{borderRadius: "25px"}}>
+                    <video controls loop autoPlay width="100%" style={{ borderRadius: "25px" }}>
                         <source src={HeaderVid} type="video/mp4"
                         />
                         Sorry, your browser doesn't support videos.
                     </video>
                     <HeaderText>Sapa is not an option</HeaderText>
                     <BtnWrapper>
-                        <HeaderBtn>Find your dream job</HeaderBtn>
+                        {/* <Link to="/application" style={{marginLeft: "-2rem"}}> */}
+                            <HeaderBtn>Find your dream job</HeaderBtn>
+                        {/* </Link> */}
                     </BtnWrapper>
                 </HeroImageWrapper>
             </HeroWrapper>
